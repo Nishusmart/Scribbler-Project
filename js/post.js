@@ -44,7 +44,7 @@ ssignin.style.display = "none";
 var postHeaderDiv = document.getElementById("post_h");
 var postContentDiv = document.getElementById("post_body");
 var edit = false;
-var editButton = document.getElementById("btn_edit_post");
+var editButton = document.getElementById("btn_edit_p");
 
 const editDoc = () => {
 	editing = !editing;
