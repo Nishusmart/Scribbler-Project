@@ -49,11 +49,11 @@ var editButton = document.getElementById("btn_edit_post");
 const editDoc = () => {
 	editing = !editing;
 	if (editing) {
-		postHeaderDiv.setAttribute("class", "editing_post_heading");
+		postHeaderDiv.setAttribute("class", "post_h");
 		postHeaderDiv.contentEditable = true;
 
 		postContentDiv.contentEditable = true;
-		postContentDiv.setAttribute("class", "editing_post_body");
+		postContentDiv.setAttribute("class", "post_body");
 		const saveIcon = document.createElement("i");
 		saveIcon.setAttribute("class", "fas fa-save");
 		editButton.innerText = "Save ";
