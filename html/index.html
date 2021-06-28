@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>ScriBBler-Project</title>
+		<link rel="stylesheet" href="/Users/nishatanjum/Desktop/Course+6+Project+Stub+-+Scribbler (2)/css/header.css" />
+		<link rel="stylesheet" href="/Users/nishatanjum/Desktop/Course+6+Project+Stub+-+Scribbler (2)/css/index.css" />
+		<!-- TODO: Include Font Awesome file here -->
+		<!-- TODO: Include Google Fonts file here -->
+		
+	</head>
+	<body>
+		<script src="/Users/nishatanjum/Desktop/Course+6+Project+Stub+-+Scribbler (2)/js/index.js" type="text/javascript" async></script>
+		<!-- Website Header -->
+		<header id="head">
+			<div id="logo_c">
+				<div id="h_logo">ScriBBler</div>
+				<div id="h_logo_tag">Explore, Imagine, Create</div>
+			</div>
+			<div id="button_c">
+				<button id="s_in" onclick="showsignin()">
+					Sign In</button
+				><button id="s_up" onclick="showsignup()">
+					Sign Up
+				</button>
+			</div>
+		</header>
+
+		<!-- The Sign Up Modal -->
+		<div id="signup" class="modal">
+			<!-- Modal content -->
+			<div class="modal-c">
+				<span class="close">&times;</span>
+				<div class="modal_h">
+					<h2>Get Started</h2>
+					<hr />
+				</div>
+				<form
+					action="GET"
+					onsubmit="window.alert('Submitted'); event.preventDefault();">
+					<div class="input_c">
+						<div>
+							<label for="f_name">Full Name</label>
+						</div>
+						<input
+							required
+							type="text"
+							name="f_name"
+							id="f_name"
+							placeholder="Enter Full Name"/>
+					</div>
+					<div class="input_c">
+						<div>
+							<label for="u_name">Username</label>
+						</div>
+						<input
+							required
+							type="text"
+							name="u_name"
+							id="u_name"
+							placeholder="Enter Username"/>
+					</div>
+					<div class="input_c">
+						<div>
+							<label for="pw">Password</label>
+						</div>
+						<input
+							required
+							type="password"
+							name="pw"
+							id="pw"
+							placeholder="Enter Password"
+						/>
+					</div>
+					<div class="input_c">
+						<div>
+							<label for="cnfrm_pw">Confirm Password</label>
+						</div>
+						<input
+							required
+							type="password"
+							name="cnfrm_pw"
+							id="cnfrm_pw"
+							placeholder="Confirm Password"
+						/>
+					</div>
+					<button id="s_up_submit" type="submit">
+						Sign Up
+					</button>
+				</form>
+			</div>
+		</div>
+
+		<!-- The Sign In Modal -->
+		<div id="signin" class="modal">
+			<!-- Modal content -->
+			<div class="modal-c">
+				<span class="close">&times;</span>
+				<div class="modal_h">
+					<h2>Welcome Back!</h2>
+					<hr />
+				</div>
+
+				<form
+					action="GET"
+					onsubmit="window.alert('Submitted'); event.preventDefault();">
+					<div class="input_c">
+						<div>
+							<label for="signin_u_name">Username</label>
+						</div>
+						<input
+							required
+							type="text"
+							name="signin_u_name"
+							id="signin_u_name"
+							placeholder="Enter Username"
+						/>
+					</div>
+					<div class="input_c">
+						<div>
+							<label for="signin_pw">Password</label>
+						</div>
+						<input
+							required
+							type="password"
+							name="signin_pw"
+							id="signin_pw"
+							placeholder="Enter Password"
+						/>
+					</div>
+					<button id="s_in_submit" type="submit">
+						Sign In
+					</button>
+					<div class="s_in_footer">
+						Not a member?
+						<a href="#" onclick="raiseSignUp()">Sign Up</a>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<!-- The Compose Post Modal -->
+		<div id="composePmodal" class="modal">
+			<!-- Modal content -->
+			<div class="modal-c">
+				<span class="close">&times;</span>
+				<div class="modal_h">
+					<h2>Pen Your Post</h2>
+				</div>
+
+				<form
+					action="GET"
+					onsubmit="window.alert('Submitted'); event.preventDefault();">
+					<div class="input_c">
+						<div>
+							<label for="com_p_title">Title:</label>
+						</div>
+						<input
+							required
+							type="text"
+							name="com_p_title"
+							id="com_p_title"
+						/>
+					</div>
+					<div class="input_c">
+						<div>
+							<label for="com_p_content">Content</label>
+						</div>
+						<textarea
+							required
+							name="com_p_content"
+							id="com_p_content"></textarea>
+					</div>
+					<button id="btn_c_post_submit" type="submit">
+						Create
+					</button>
+				</form>
+			</div>
+		</div>
+
+		<!-- Central Components to compose and view all posts -->
+		<div id="container">
+			<div class="button_container">
+				<button
+					id="btn_a_posts"
+					onclick="location.href='/Users/nishatanjum/Desktop/Course+6+Project+Stub+-+Scribbler (2)/html/bloglist.html'">
+					All Posts
+				</button>
+				<button
+					id="btn_c_post"
+					onsubmit=""
+					onclick="showcomposePmodal()">
+					Create Post
+				</button>
+			</div>
+		</div>	
+		
+	</body>
+</html>

@@ -1,0 +1,31 @@
+#head {
+	display: flex;
+	flex-direction: row;
+	margin-left: 3px;
+	justify-content: space-between;
+}
+
+#h_logo {
+	font-family:'Times New Roman', Times, serif;
+	font-size: 50px;
+	font-weight: 600;
+	color: #2d37ff;
+}
+#logo_c {
+	cursor: pointer;
+}
+#h_logo{
+	font-family:'Times New Roman', Times, serif;
+	font-weight: 400;
+}
+
+#s_in,
+#s_up {
+	background-color: #2d37ff;
+	color: white;
+	font-size: small;
+	height: 35px;
+	padding: 5px 18px;
+	cursor: pointer;
+	margin: 10px 5px;
+}
