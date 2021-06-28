@@ -1,11 +1,4 @@
-// Take user to the homepage when he clicks on the site logo.
-const bindLogoToHomepage = () => {
-	const logo = document.getElementById("logo_c");
-	logo.addEventListener("click", () => {
-		window.location.href = "/";
-	});
-};
-bindLogoToHomepage();
+
 
 var delPModal = document.getElementById("delPModal");
 var signup= document.getElementById("signup");
@@ -38,7 +31,7 @@ const hideDelPModal = () => {
 	delPModal.style.display = "none";
 };
 
-// When the user clicks anywhere outside of the modal, close it
+//closes when clicked outside 
 window.onclick = function (event) {
 	if (event.target == delPModal) delPModal.style.display = "none";
 	else if (event.target == signup) {

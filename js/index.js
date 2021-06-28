@@ -1,7 +1,9 @@
+// Modal Nodes
 var signup = document.getElementById("signup");
 var signin = document.getElementById("signin");
 var composePmodal = document.getElementById("composePmodal");
 
+// Hiding of modals 
 signup.style.display = "none";
 signin.style.display = "none";
 composePmodal.style.display = "none";
@@ -16,6 +18,7 @@ const showsignin = () => {
 const showcomposePmodal = () => {
 	composePmodal.style.display = "block";
 };
+//opens the signup modal
 const raiseSignUp = () => {
 	signin.style.display = "none";
 	showsignup();
@@ -29,7 +32,7 @@ for (const close of span) {
 		composePmodal.style.display = "none";
 	};
 }
-// //closes when clicked outside 
+//closes when clicked outside 
 window.onclick = function (event) {
 	if (event.target == signup) {
 		signup.style.display = "none";

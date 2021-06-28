@@ -6,9 +6,10 @@ body {
 }
 
 body {
-	background-image: url("/Users/nishatanjum/Desktop/Course+6+Project+Stub+-+Scribbler (2)/images/background.jpg");
+	background-image: url("../images/background.jpg");
 	background-repeat: repeat-x;
 	background-size: cover;
+	font-family:'Times New Roman', Times, serif;
 }
 
 #container {
@@ -82,7 +83,7 @@ body {
 
 .input_c {
 	margin: 20px 0px;
-	font-family:'Courier New', Courier, monospace;
+	font-family:'Times New Roman', Times, serif;
 }
 
 .input_c label {

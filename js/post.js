@@ -1,11 +1,4 @@
-// Take user to the homepage when he clicks on the site logo.
-const bindLogoToHomepage = () => {
-	const logo = document.getElementById("logo_container");
-	logo.addEventListener("click", () => {
-		window.location.href = "/";
-	});
-};
-bindLogoToHomepage();
+
 
 var signup = document.getElementById("signup");
 var signin = document.getElementById("signin");
@@ -29,31 +22,31 @@ const raiseSignUp = () => {
 const span = document.getElementsByClassName("close");
 for (const close of span) {
 	close.onclick = function () {
-		signUpModal.style.display = "none";
-		signInModal.style.display = "none";
+		signup.style.display = "none";
+		signin.style.display = "none";
 	};
 }
 
 //closes when clicked outside 
 window.onclick = function (event) {
-	if (event.target == signUpModal) {
-		signUpModal.style.display = "none";
-	} else if (event.target == signInModal) {
-		signInModal.style.display = "none";
+	if (event.target == signup) {
+		signup.style.display = "none";
+	} else if (event.target == signin) {
+		signin.style.display = "none";
 	}
 };
 
-signUpModal.style.display = "none";
-signInModal.style.display = "none";
+signup.style.display = "none";
+ssignin.style.display = "none";
 
 // heading_editing_post_
 // post_body editing_post_body
 var postHeaderDiv = document.getElementById("post_h");
 var postContentDiv = document.getElementById("post_body");
-var editing = false;
+var edit = false;
 var editButton = document.getElementById("btn_edit_post");
 
-const editDocument = () => {
+const editDoc = () => {
 	editing = !editing;
 	if (editing) {
 		postHeaderDiv.setAttribute("class", "editing_post_heading");
